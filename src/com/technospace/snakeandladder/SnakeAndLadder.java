@@ -18,6 +18,7 @@ public class SnakeAndLadder {
 			Random random=new Random();
 			
 			System.out.println("Player 1 start Position is = "+position);
+			while(position != 100){
 			int dieNo = random.nextInt(6)+1;
 			System.out.println("Die Number="+dieNo);
 			
@@ -43,6 +44,8 @@ public class SnakeAndLadder {
 				break;
 			}
 			System.out.println("New Position = "+position);
+			System.out.println("####################################");
 	}
 
+}
 }
