@@ -9,6 +9,7 @@ public class SnakeAndLadder {
 		 * Variable for defining player position in game
 		 */
 			int position=0;
+			int count_dieRoll=0;
 			final int NO_PLAY = 1;
 			final int LADDER = 2;
 			final int SNAKE = 3;
@@ -21,7 +22,7 @@ public class SnakeAndLadder {
 			while(position != 100){
 			int dieNo = random.nextInt(6)+1;
 			System.out.println("Die Number="+dieNo);
-			
+			count_dieRoll++;
 			System.out.println("New Position after Rolling Die="+position);
 			int option =random.nextInt(3)+1;
 			System.out.println("Option Number="+option);
@@ -49,6 +50,6 @@ public class SnakeAndLadder {
 			System.out.println("New Position = "+position);
 			System.out.println("####################################");
 	}
-
+			System.out.println("Total Count of Die Roll to win the Game="+count_dieRoll);
 }
 }
